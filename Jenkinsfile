@@ -10,7 +10,7 @@ node {
     stage('Print Working Directory') {
 
             sh 'pwd'
-
+	    sh 'ls'
     }
 
     stage('Build image') {
