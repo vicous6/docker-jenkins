@@ -8,9 +8,9 @@ node {
     }
 
     stage('Print Working Directory') {
-        steps {
+
             sh 'pwd'
-        }
+
     }
 
     stage('Build image') {
