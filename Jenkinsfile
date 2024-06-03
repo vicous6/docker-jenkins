@@ -6,13 +6,13 @@ node {
 	
         checkout scm
     }
-    stages {
-        stage('Print Working Directory') {
-            steps {
-                sh 'pwd'
-            }
+
+    stage('Print Working Directory') {
+        steps {
+            sh 'pwd'
         }
     }
+
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
