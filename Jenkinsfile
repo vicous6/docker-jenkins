@@ -22,7 +22,7 @@ sh 'echo $PATH'
     stage('Build image') {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
-
+sh 'sudo service docker restart'
         app = docker.build("docker-jenkins")
     }
 
