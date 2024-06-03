@@ -10,7 +10,10 @@ node {
     stage('Print Working Directory') {
 
             sh 'pwd'
+
 	    sh 'ls'
+sh 'echo $PATH'
+		sh 'docker --version'
     }
 
     stage('Build image') {
